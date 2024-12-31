@@ -30,6 +30,9 @@ def jogo():
         
         tentativa = input("\nDigite uma letra: ").lower()
         
+        if tentativa in letras_descobertas or tentativa in letras_erradas: 
+            print("Você já escolheu essa letra, por favor, escolha outra:")
+            continue
         if tentativa in palavra:
             index = 0
             for l in palavra:
@@ -37,6 +40,7 @@ def jogo():
                     letras_descobertas[index] = l
                 index +=1
         else: 
+            print("Essa letra não faz parte da palavra :(")
             chances -= 1
             letras_erradas.append(tentativa)
             
@@ -50,7 +54,7 @@ def jogo():
         if denovo == "S":
                 jogo()
         else: 
-            print("Obrigado por ter jogado o nosso")
+            print("Obrigado por ter jogado o nosso jogo. Volte sempre!")
         
 if __name__ == "__main__":
     jogo()
