@@ -1,0 +1,73 @@
+# Jogo da Forca - Projeto da Data Science Academy
+
+## Descrição do Projeto
+Este é um jogo simples de Forca desenvolvido em Python. O objetivo é adivinhar uma palavra, letra por letra, antes que as chances acabem. Este projeto utiliza conceitos básicos de Python, como manipulação de arquivos, loops e funções, e é ideal para iniciantes.
+
+---
+
+## Funcionalidades
+- O jogo escolhe uma palavra aleatória de uma lista de palavras armazenada em um arquivo de texto.
+- O jogador tem um número limitado de chances para acertar a palavra.
+- O jogo exibe:
+  - O progresso da palavra sendo adivinhada.
+  - Letras erradas já tentadas.
+  - Quantidade de chances restantes.
+- Caso o jogador perca, há a opção de tentar novamente.
+
+---
+
+## Pré-requisitos
+- **Python 3.6 ou superior** deve estar instalado no seu sistema.
+- Um arquivo de texto chamado `palavras_forca.txt` contendo uma lista de palavras, uma por linha.
+
+### Estrutura do arquivo `palavras_forca.txt`
+O arquivo deve conter palavras simples separadas por linha, como no exemplo abaixo:
+```
+aprendizado
+python
+programacao
+forca
+ciencia
+dados
+```
+Certifique-se de que o caminho para este arquivo está correto no código.
+
+---
+
+## Como Executar o Jogo
+1. Clone ou faça o download deste repositório.
+2. Certifique-se de que o arquivo `palavras_forca.txt` está no local correto e possui palavras para o jogo.
+3. Execute o arquivo Python no terminal ou em um ambiente de desenvolvimento integrado (IDE):
+   ```bash
+   python jogo_da_forca.py
+   ```
+4. Siga as instruções exibidas na tela para jogar.
+
+---
+
+## Fluxo do Jogo
+1. O jogo limpa a tela e dá as boas-vindas ao jogador.
+2. O jogador tenta adivinhar a palavra digitando uma letra por vez.
+3. O jogo verifica se a letra está na palavra e atualiza o progresso.
+4. Caso o jogador acerte todas as letras da palavra antes de esgotar as chances, ele vence.
+5. Se todas as chances forem usadas, o jogador perde e recebe a opção de jogar novamente.
+
+---
+
+## Pontos de Aprendizado
+Este projeto ajuda no desenvolvimento das seguintes habilidades:
+- Manipulação de arquivos em Python.
+- Uso de listas e loops para lógica de jogos.
+- Estruturação de código com funções para melhor organização.
+- Interação com o usuário através de entradas e saídas no terminal.
+
+---
+
+## Contribuições
+Contribuições para melhorias deste jogo são bem-vindas! Caso tenha sugestões ou encontre bugs, sinta-se à vontade para abrir um pull request ou reportar um problema.
+
+---
+
+## Licença
+Este projeto é de uso livre e foi desenvolvido como parte de um exercício educacional. Sinta-se à vontade para usá-lo e modificá-lo como preferir.
+
